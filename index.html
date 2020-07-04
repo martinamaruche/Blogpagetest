@@ -1,154 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>Blog template</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Blog Page Test</title>
-<link href="style.css" rel="stylesheet" >
-</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="stylecss.css" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+</head>
 <body>
 
-<nav>
-  <a href="">World</a> 
-  <a href="">US</a> 
-  <a href="">Technology</a> 
-  <a href="">Design</a> 
-</nav>
+<div class="blognav" id="myTopnav">
+<div class="container">
+        <nav>
+          <a class="blog-nav-item active" href="#">World</a>
+          <a class="blog-nav-item" href="#">U.S.</a>
+          <a class="blog-nav-item" href="#">Technology</a>
+          <a class="blog-nav-item" href="#">Design</a>
+          <a class="blog-nav-item" href="#">Culture</a>
+		  <a class="blog-nav-item" href="#">Business</a>
+          <a class="blog-nav-item" href="#">Politics</a>
+          <a class="blog-nav-item" href="#">Opinion</a>
+          <a class="blog-nav-item" href="#">Science</a>
+		   <a class="blog-nav-item" href="#">Health</a>
+          <a class="blog-nav-item" href="#">Style</a>
+          <a class="blog-nav-item" href="#">Travel</a>
+		  <a href="javascript:void(0);" class="icon" onclick="navExpand()">
+    <i class="fa fa-bars"></i>
+  </a>
+        </nav>
+</div>
+</div>
+
 
 <div class="container">
-<div class="contentbox">
 <div class="header">
-<h1 class="blog-heading">Title of a longer featured blog post</h1>
-<p class="content">some content</p>
-<a class="continue" href="" >Continue reading</a>
+<div class="headercontent">
+  <h1><em>Title of a longer featured blog post</em></h1>
+  <p class="para">Multiple lines of text that form the lede, informing new readers quickly and efficiently about whats most interesting in this post content</p>
+  <a class="continue text-white" href="" >Continue reading...</a>
 </div>
-</div>
-
-<div class="contentbox">
-
-<div class="box">
-<div class="boxcontent">
-<h3 class="blog-post-title">Featured post</h3>
-<p class="blog-meta">Nov 12</p>
-<p class="content">some content</p>
-<a class="continue" href="" >Continue reading</a>
-</div>
-<div class="thumbnail">
-Thumbnail
-</div>
-</div>
-
-<div class="box">
-<div class="boxcontent">
-<h3>Featured post</h3>
-<p class="blog-meta">Nov 12</p>
-<p class="content">some content</p>
-<a class="continue" href="" >Continue reading</a>
-</div>
-<div class="thumbnail">
-Thumbnail
-</div>
-</div>
-
 </div>
 
 
 <div class="row">
-<div class="col-8" style="float:left; display: inline-block; width: 50%; ">
-<div class="maincontent">
-<h4 class="bolditalic">some content</h4>
-<hr>
+
+<div class="col-6">
+<div class="card">
+<div class="card-body bg-dark">
+<div class="col-sm-9">
+<h2 class="blog-title">New feature</h2>
+<p class="blog-meta">December 14, 2013 by <a class="authourname" href="" >Chris</a></p>
+<p class="content">Cum sociis natoque penatibus et magnis</p>
+</div>
+<div class="col-sm-3 text-white"><span>Thumbnail</span></div>
+</div>
+</div>
+
+</div>
+
+
+<div class="col-6">
+<div class="card">
+
+<div class="card-body bg-dark">
+<div class="col-sm-9">
+<h2 class="blog-title">Post Title</h2>
+<p class="blog-meta">December 14, 2013 by <a class="authourname" href="" >Chris</a></p>
+<p class="content">Cum sociis natoque penatibus et magnis</p>
+</div>
+<div class="col-sm-3 text-white"><span>Thumbnail</span></div>
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+
+<div class="row">
+<div class="col-8">
+            <h4><em>From the Firehouse</em></h4>
+			<hr>
+			
 <h2 class="blog-title">Sample blog post</h2>
 <p class="blog-meta">December 23, 2013 by <a class="authourname" href="" > Mark</a></p>
-<p class="content">some content</p>
+<p class="content">This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
 <hr>
-<p class="content">some content <a href="">link</a> some content</p>
-<p class="content">some content<strong>some bold content</strong>some content</p>
-<p class="content">some content<em>some italic content</em>some content</p>
-<h3>Heading</h3>
-<p class="content">some content</p>
-<h4>Sub-heading</h4>
-<p class="content">some content</p>
-<p class="content">some content</p>
-<p class="content">some content</p>
-<h4>Sub-heading</h4>
-<p class="content">some content</p>
+<p class="content">Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+<p class="content">Sed posuere <strong>consectetur est at lobortis</strong> Cras mattis consectetur purus sit amet fermentum</p>
+<p class="content">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+<h2>Heading</h2>
+<p class="content">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+<a href="contact.html" target=_blank >
+<button class="button button2" >Contact Form</button>
+</a>
+
+<a href="submitblog.html" target=_blank >
+<button class="button button2" >Submit Blog</button>
+</a>
+
+
+<h3>Sub-heading</h3>
+<p class="content">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+<code>Example code block</code>
+<p class="content">Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+<h3>Sub-heading</h3>
+<p class="content">Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
 <ul>
-<li>list 1</li>
-<li>list 2</li>
-<li>list 3</li>
+<li>Praesent commodo cursus magna</li>
+<li>vel scelerisque</li>
+<li>nisl consectetur etc</li>
 </ul>
-<p class="content">some content</p>
+<p class="content">Etiam porta mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+<h2>Heading</h2>
 <ol>
-<li>list 1</li>
-<li>list 2</li>
-<li>list 3</li>
+<li>Praesent commodo cursus magna</li>
+<li>vel scelerisque</li>
+<li>nisl consectetur etc</li>
 </ol>
-<p class="content">some content</p>
+<p class="content">Etiam porta mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
 
-
-
-<h2>Another blog post</h2>
+<h2 class="blog-title">Another blog post</h2>
 <p class="blog-meta">December 23, 2013 by <a class="authourname" href="" >Jacob</a></p>
-<p class="content">some content<a href="">link</a>some content</p>
-<p class="content">some content<strong>some bold content</strong>some content</p>
-<p class="content">some content<em>some italic content</em>some content</p>
-<p class="content">some content</p>
+<p class="content">Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+<p class="content">Sed posuere <strong>consectetur est at lobortis</strong> Cras mattis consectetur purus sit amet fermentum</p>
+<p class="content">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+<p class="content">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 
-
-
-<h2>New feature</h2>
+<h2 class="blog-title">New feature</h2>
 <p class="blog-meta">December 14, 2013 by <a class="authourname" href="" >Chris</a></p>
-<p class="content">some content</p>
+<p class="content">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
 <ul>
-<li>list 1</li>
-<li>list 2</li>
-<li>list 3</li>
+<li>Praesent commodo cursus magna</li>
+<li>vel scelerisque</li>
+<li>nisl consectetur etc</li>
 </ul>
-<p class="content">some content</p>
-<p class="content">some content</p>
+<p class="content">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+<p class="content">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 
-<button type="button" value="Older" class="old">Older</button>
-<button type="button" value="Newer" class="new">Newer</button>
-</div>
-
-<div class="col-4" style="float:right; display: inline-block;width: 50%;position: absolute;">
-<div class="sidecontent">
-
-<div class="greybox">
-<h4 class="bolditalic">About</h4>
-<p class="content">some content</p>
+<nav>
+            <ul class="switchpage">
+              <li><a href="#">Older</a></li>
+              <li><a href="#">Newer</a></li>
+            </ul>
+ </nav>
+		  
 </div>
 
-<h4 class="bolditalic">Archives</h4>
-	<ol class="list-nostyle">
-        <li><a href="#">March 2014</a></li>
-        <li><a href="#">February 2014</a></li>
-        <li><a href="#">January 2014</a></li>
-        <li><a href="#">December 2013</a></li>
-        <li><a href="#">November 2013</a></li>
-        <li><a href="#">October 2013</a></li>
-        <li><a href="#">September 2013</a></li>
-        <li><a href="#">August 2013</a></li>
-		<li><a href="#">July 2013</a></li>
-		<li><a href="#">June 2013</a></li>
-		<li><a href="#">May 2013</a></li>
-		<li><a href="#">April 2013</a></li>
-    </ol>
-			
-<h4 class="bolditalic">Elsewhere</h4>
-<a href="">Github</a>
-<a href="">Twitter</a>
-<a href="">Facebook</a>
+<div class="col-4">
+<div class="sidebar-module sidebar-module-inset">
+            <h4><em>About</em></h4>
+            <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+</div>
+<div class="sidebar-module">
+            <h4><em>Archives</em></h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+</div>
+<div class="sidebar-module">
+            <h4><em>Elsewhere</em></h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+</div>
+		  
+</div>	  
+</div>
+    
+
 
 </div>
-</div>
-</div>
-</div>
 
-</div>
+<script>
+function navExpand() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "blognav") {
+    x.className += " responsive";
+  } else {
+    x.className = "blognav";
+  }
+}
+</script>
 
 </body>
-
-</html>
